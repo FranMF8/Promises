@@ -1,44 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
+        <title>Students</title>
         <script type="text/javascript" src="script.js"></script>
-    </header>
+    </head>
     <body>
-        <div class="container" id="input-container">
-            <div class="data-container">
-                ID
-                <div id="DNI">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="data-container">
-                Nombre
-                <div id="first-name"> 
-                    <input type="text">
-                </div>
-            </div>
-            <div class="data-container">
-                Apellido 
-                <div id="last-name">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="data-container">
-                Email 
-                <div id="email">
-                    <input type="text">
-                </div>
-            </div>
-            <div class="get-button">
-                <button type="input" onclick="getStudents()">Traer usuarios</button>
-            </div>
-        </div>
-        <div >
-        </div>
         <table>
-            <tbody class="container" id="output-container">
-
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Dni</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
             </tbody>
+            <tfoot>
+                <tr>
+                    <td><button onclick="getStudents()">Update</button></td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
