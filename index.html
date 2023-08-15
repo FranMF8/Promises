@@ -20,6 +20,28 @@
             </tbody>
             <tfoot>
                 <tr>
+                    <td><input id="dni"></td>
+                    <td><input id="lastName"></td>
+                    <td><input id="firstName"></td>
+                    <td><input id="email"></td>
+                    <td><button onclick="addNewStudent()">Add Student</button></td>
+                </tr>
+                <tr>
+                    <td><input id="dni-update"></td>
+                    <td><input id="lastName-update"></td>
+                    <td><input id="firstName-update"></td>
+                    <td><input id="email-update"></td>
+                    <td><button onclick="modifyStudent()">Update Student</button></td>
+                </tr>
+                <tr>
+                    <td><div id="selected-id"></div></td>
+                    <td><div id="selected-dni"></div></td>
+                    <td><div id="selected-lastName"></div></td>
+                    <td><div id="selected-firstName"></div></td>
+                    <td><div id="selected-email"></div></td>
+                    <td><button id="delete-button" onclick="deleteStudent()">Delete</button></td>
+                </tr>
+                <tr>
                     <td><button onclick="getStudents()">Update</button></td>
                 </tr>
             </tfoot>
